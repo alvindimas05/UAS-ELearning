@@ -2,22 +2,22 @@
     <!-- Hero Section -->
     <section class="hero min-h-screen bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
         <div class="hero-content flex-col lg:flex-row-reverse gap-12">
-            <div class="flex-1 flex items-center justify-center">
+            <div class="flex-1 flex items-center justify-center animate__animated animate__fadeInRight">
                 <!-- Lottie Animation -->
                 <dotlottie-wc src="{{ asset('lottie/learning.lottie') }}" autoplay="true" loop="true"></dotlottie-wc>
             </div>
             <div class="flex-1">
-                <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight">
+                <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight animate__animated animate__fadeInLeft">
                     Learn Without Limits
                 </h1>
-                <p class="py-6 text-lg opacity-80">
+                <p class="py-6 text-lg opacity-80 animate__animated animate__fadeInLeft">
                     Access world-class education from anywhere. Join thousands of students advancing their careers through our innovative online learning platform.
                 </p>
-                <div class="flex gap-4 flex-wrap">
+                <div class="flex gap-4 flex-wrap animate__animated animate__fadeInUp">
                     <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
                     <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
                 </div>
-                <div class="flex gap-8 mt-8">
+                <div class="flex gap-8 mt-8 animate__animated animate__fadeInUp animate__delay-1s">
                     <div>
                         <div class="stat-value text-primary">50K+</div>
                         <div class="stat-desc">Active Students</div>
@@ -327,7 +327,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-primary-content">
+    <section class="py-20 bg-primary text-primary-content">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Start Learning?</h2>
             <p class="text-xl mb-8 opacity-90">Join thousands of students already learning on UniLearn</p>
