@@ -3,8 +3,27 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/thisispiers/filament-enhanced-datalist",
+            "no-api": true
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/nakanakaii/image-optimizer",
+            "no-api": true
+        }
+    ],
     "require": {
         "php": "^8.2",
         "filament/filament": "^4.0",
@@ -19,7 +38,9 @@
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
-        "phpunit/phpunit": "^11.5.3"
+        "phpunit/phpunit": "^11.5.3",
+        "balintcodes/filament-enhanced-datalist": "dev-main",
+        "joshembling/image-optimizer": "dev-main"
     },
     "autoload": {
         "psr-4": {
