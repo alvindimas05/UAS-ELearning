@@ -49,11 +49,7 @@
                     class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                     <div class="card-body items-center text-center">
                         <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            </svg>
+                            <i class="fa-solid fa-book fa-2xl text-primary"></i>
                         </div>
                         <h3 class="card-title">Expert Instructors</h3>
                         <p class="opacity-70">Learn from industry professionals and academic experts with years of
@@ -64,11 +60,7 @@
                     class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                     <div class="card-body items-center text-center">
                         <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <i class="fa-solid fa-clock fa-2xl text-secondary"></i>
                         </div>
                         <h3 class="card-title">Flexible Learning</h3>
                         <p class="opacity-70">Study at your own pace, anytime and anywhere that suits your schedule</p>
@@ -78,11 +70,7 @@
                     class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                     <div class="card-body items-center text-center">
                         <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                            </svg>
+                            <i class="fa-solid fa-graduation-cap fa-2xl text-accent"></i>
                         </div>
                         <h3 class="card-title">Verified Certificates</h3>
                         <p class="opacity-70">Earn recognized certificates to boost your career and showcase your skills
@@ -218,11 +206,7 @@
                         @endif
                         <div class="card-body">
                             <div class="flex items-center gap-2 text-sm opacity-60 mb-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
+                                <i class="fa-solid fa-calendar text-base-content/50"></i>
                                 <span>{{ $article->created_at->format('M d, Y') }}</span>
                             </div>
                             <h3 class="card-title text-xl">{{ $article->title }}</h3>

@@ -24,23 +24,15 @@
                 <!-- Search Bar -->
                 <div class="form-control w-full lg:w-96">
                     <div class="input-group relative">
-                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/50">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
+                        <span class="absolute left-3 top-1/2 z-1 -translate-y-1/2 text-base-content/50">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
                         <input type="text" wire:model.live.debounce.300ms="search" placeholder="Search articles..."
                             class="input input-bordered w-full pl-10 focus:input-primary" />
                         @if ($search)
                             <button wire:click="$set('search', '')"
-                                class="absolute right-3 top-1/2 -translate-y-1/2 text-base-content/50 hover:text-base-content">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
+                                class="absolute right-3 top-1/2 -translate-y-1/2 text-base-content/50 hover:text-primary">
+                                <i class="fa-solid fa-xmark"></i>
                             </button>
                         @endif
                     </div>
@@ -72,11 +64,7 @@
                     <!-- Clear Filters Button -->
                     @if ($search || $category || $dateFilter)
                         <button wire:click="clearFilters" class="btn btn-outline btn-error btn-sm gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                            </svg>
+                            <i class="fa-solid fa-xmark"></i>
                             Clear Filters
                         </button>
                     @endif
@@ -143,20 +131,12 @@
                         @else
                             <figure
                                 class="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-base-content/20"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                                </svg>
+                                <i class="fa-solid fa-book-open-reader text-4xl text-primary"></i>
                             </figure>
                         @endif
                         <div class="card-body">
                             <div class="flex items-center gap-2 text-sm opacity-60 mb-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
+                                <i class="fa-solid fa-calendar text-base-content/50"></i>
                                 <span>{{ $article->created_at->format('M d, Y') }}</span>
                             </div>
                             <h3 class="card-title text-xl line-clamp-2">{{ $article->title }}</h3>
@@ -175,11 +155,7 @@
                 @empty
                     <div class="col-span-full text-center py-20">
                         <div class="flex flex-col items-center gap-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-base-content/20"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <i class="fa-solid fa-book-open-reader text-2xl text-primary"></i>
                             <h3 class="text-2xl font-bold">No Articles Found</h3>
                             <p class="text-lg opacity-70 max-w-md">
                                 We couldn't find any articles matching your search criteria. Try adjusting your filters

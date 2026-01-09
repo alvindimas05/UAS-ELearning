@@ -16,6 +16,7 @@
         "vite": "^7.0.7"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^7.1.0",
         "@lottiefiles/dotlottie-wc": "^0.8.13",
         "animate.css": "^4.1.1"
     }
