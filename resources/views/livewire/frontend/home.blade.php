@@ -246,7 +246,7 @@
             </div>
             @if ($articles->count() > 0)
                 <div class="text-center mt-12">
-                    <a href="#" class="btn btn-outline btn-lg">View All Articles</a>
+                    <a href="{{ route('article.index') }}" class="btn btn-outline btn-lg">View All Articles</a>
                 </div>
             @endif
         </div>

@@ -10,11 +10,12 @@
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#articles">Articles</a></li>
+                <li><a href="{{ route('article.index') }}">Articles</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <a href="/" class="btn btn-ghost text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <a href="/"
+            class="btn btn-ghost text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             🎓 UniLearn
         </a>
     </div>
@@ -22,7 +23,7 @@
         <ul class="menu menu-horizontal px-1 gap-2">
             <li><a href="#courses" class="hover:text-primary transition-colors">Courses</a></li>
             <li><a href="#about" class="hover:text-primary transition-colors">About</a></li>
-            <li><a href="#articles" class="hover:text-primary transition-colors">Articles</a></li>
+            <li><a href="{{ route('article.index') }}" class="hover:text-primary transition-colors">Articles</a></li>
             <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
         </ul>
     </div>

@@ -5,7 +5,7 @@
             <div class="flex items-center gap-2 text-sm opacity-60 mb-4">
                 <a href="{{ route('home') }}" class="hover:text-primary transition-colors">Home</a>
                 <span>/</span>
-                <span>Articles</span>
+                <a href="{{ route('article.index') }}" class="hover:text-primary transition-colors">Articles</a>
                 <span>/</span>
                 <span class="text-primary">{{ Str::limit($article->title, 30) }}</span>
             </div>
@@ -49,7 +49,7 @@
 
                     <!-- Back Button -->
                     <div class="mt-12">
-                        <a href="{{ route('home') }}#articles" class="btn btn-outline btn-primary gap-2">
+                        <a href="{{ route('article.index') }}" class="btn btn-outline btn-primary gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -124,7 +124,7 @@
                 <a href="{{ route('home') }}#courses" class="btn btn-lg bg-base-100 text-primary hover:bg-base-200">
                     Browse Courses
                 </a>
-                <a href="{{ route('home') }}#articles"
+                <a href="{{ route('article.index') }}"
                     class="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary">
                     More Articles
                 </a>
