@@ -21,7 +21,7 @@
             <li><a href="{{ route('home') }}#courses" class="hover:text-primary transition-colors">Courses</a></li>
             <li><a href="{{ route('home') }}#about" class="hover:text-primary transition-colors">About</a></li>
             <li><a href="{{ route('article.index') }}" class="hover:text-primary transition-colors">Articles</a></li>
-            <li><a href="{{ route('home') }}#contact" class="hover:text-primary transition-colors">Contact</a></li>
+            <li><a href="{{ route('contact') }}" class="hover:text-primary transition-colors">Contact</a></li>
         </ul>
     </div>
     <div class="navbar-end gap-2">

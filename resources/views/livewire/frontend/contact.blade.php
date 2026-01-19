@@ -4,7 +4,7 @@
         class="hero min-h-[40vh] bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 relative overflow-hidden">
         <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div class="hero-content text-center relative z-10 py-12">
-            <div class="max-w-md animate__animated animate__fadeInUp">
+            <div class="max-w-md">
                 <h1
                     class="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-6">
                     Contact Us</h1>
@@ -20,7 +20,7 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Contact Information -->
-                <div class="space-y-8 animate__animated animate__fadeInLeft">
+                <div class="space-y-8">
                     <div>
                         <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
                         <p class="text-lg opacity-70 mb-8">
@@ -33,7 +33,7 @@
                         <div class="card-body">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                                    class="w-12 h-12 p-2 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
                                     <i class="fa-solid fa-location-dot text-xl text-primary"></i>
                                 </div>
                                 <div>
@@ -48,7 +48,7 @@
                         <div class="card-body">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center shrink-0">
+                                    class="w-12 h-12 p-2 bg-secondary/10 rounded-full flex items-center justify-center shrink-0">
                                     <i class="fa-solid fa-envelope text-xl text-secondary"></i>
                                 </div>
                                 <div>
@@ -63,7 +63,7 @@
                         <div class="card-body">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center shrink-0">
+                                    class="w-12 h-12 p-2 bg-accent/10 rounded-full flex items-center justify-center shrink-0">
                                     <i class="fa-solid fa-phone text-xl text-accent"></i>
                                 </div>
                                 <div>
@@ -75,8 +75,8 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="card bg-base-100 shadow-2xl animate__animated animate__fadeInRight">
+                {{-- <!-- Contact Form -->
+                <div class="card bg-base-100 shadow-2xl">
                     <div class="card-body p-8">
                         <h2 class="card-title text-2xl mb-6">Send Message</h2>
 
@@ -143,7 +143,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
