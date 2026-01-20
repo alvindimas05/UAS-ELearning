@@ -30,24 +30,11 @@ class CourseInfolist
                     ->schema([
                         \Filament\Infolists\Components\RepeatableEntry::make('contents')
                             ->schema([
-                                \Filament\Infolists\Components\TextEntry::make('title')
-                                    ->weight('bold'),
-                                \Filament\Infolists\Components\TextEntry::make('type')
-                                    ->badge()
-                                    ->color(fn (string $state): string => match ($state) {
-                                        'video' => 'success',
-                                        'text' => 'info',
-                                        default => 'gray',
-                                    }),
-                                \Filament\Infolists\Components\TextEntry::make('description')
-                                    ->markdown()
+                                \Filament\Infolists\Components\ViewEntry::make('content_item')
+                                    ->view('filament.user.resources.courses.infolists.content-item')
                                     ->columnSpanFull(),
-                                \Filament\Infolists\Components\TextEntry::make('file_path')
-                                    ->label('Content URL')
-                                    ->url(fn ($state) => $state ? Storage::url($state) : null, true)
-                                    ->visible(fn ($record) => $record->type === 'video' || $record->file_path),
                             ])
-                            ->grid(1)
+                            ->contained(false)
                             ->columnSpanFull(),
                     ])
                     ->collapsed(true)

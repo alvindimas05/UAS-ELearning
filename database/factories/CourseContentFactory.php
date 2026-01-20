@@ -26,9 +26,9 @@ class CourseContentFactory extends Factory
         return [
             'course_id' => Course::factory(),
             'title' => $this->faker->sentence(),
-            'type' => $this->faker->randomElement(['video', 'text']),
+            'type' => 'text',
             'file_path' => str_replace(storage_path('app/public/'), '', $imageFaker->image(storage_path('app/public/course-contents'))),
-            'description' => $this->faker->paragraph(),
+            'description' => $this->faker->paragraphs(5, true),
             'sort_order' => $this->faker->numberBetween(1, 100),
         ];
     }
