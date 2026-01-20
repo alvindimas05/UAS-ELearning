@@ -14,6 +14,10 @@ class CourseInfolist
             ->components([
                 Section::make('Course Details')
                     ->schema([
+                        \Filament\Infolists\Components\ImageEntry::make('thumbnail')
+                            ->imageHeight(200)
+                            ->imageWidth('100%')
+                            ->extraImgAttributes(['class' => 'object-cover rounded-lg']),
                         \Filament\Infolists\Components\TextEntry::make('title')
                             ->size('lg')
                             ->weight('bold'),

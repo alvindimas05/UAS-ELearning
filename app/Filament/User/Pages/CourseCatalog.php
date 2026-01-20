@@ -104,11 +104,19 @@ class CourseCatalog extends Page implements HasTable, HasForms
                                 ])->collapsed(true)
                         ])
                     ),
+                Action::make('view_course')
+                    ->label('View')
+                    ->button()
+                    ->color('success')
+                    ->icon('heroicon-m-eye')
+                    ->url(fn (Course $record) => CourseResource::getUrl('view', ['record' => $record]))
+                    ->visible(fn (Course $record) => Auth::user()->purchasedCourses()->where('course_id', $record->id)->exists()),
                 Action::make('buy')
                     ->label('Buy Course')
                     ->button()
                     ->color('primary')
                     ->icon('heroicon-m-shopping-cart')
+                    ->visible(fn (Course $record) => ! Auth::user()->purchasedCourses()->where('course_id', $record->id)->exists())
                     ->action(function (Course $record, \Livewire\Component $livewire) {
                         $user = Auth::user();
                         
