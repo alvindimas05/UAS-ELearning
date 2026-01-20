@@ -19,6 +19,11 @@ use Illuminate\Support\Facades\Auth;
 
 use BackedEnum;
 use App\Filament\User\Resources\Courses\CourseResource;
+use Filament\Actions\ViewAction;
+use Filament\Infolists\Components\ImageEntry;
+use Filament\Infolists\Components\RepeatableEntry;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Section;
 
 class CourseCatalog extends Page implements HasTable, HasForms
 {
@@ -58,11 +63,52 @@ class CourseCatalog extends Page implements HasTable, HasForms
                         ->color('gray'),
                 ])->space(3),
             ])
-            ->actions([
+            ->recordActions([
+                ViewAction::make('preview')
+                    ->label('Preview')
+                    ->color('gray')
+                    ->button()
+                    ->modalHeading('Course Preview')
+                    ->schema(fn ($infolist) => $infolist
+                        ->schema([
+                            ImageEntry::make('thumbnail')
+                                ->hiddenLabel()
+                                ->imageHeight(200)
+                                ->imageWidth('100%')
+                                ->extraImgAttributes(['class' => 'object-cover rounded-lg']),
+
+                            Section::make('Course Details')
+                                ->schema([
+                                    TextEntry::make('title')
+                                        ->weight('bold')
+                                        ->size('lg'),
+                                    TextEntry::make('description')
+                                        ->markdown(),
+                                ])->collapsed(false),
+
+                            Section::make('Contents')
+                                ->schema([
+                                    RepeatableEntry::make('contents')
+                                        ->schema([
+                                            TextEntry::make('title')
+                                                ->label('Title'),
+                                            TextEntry::make('type')
+                                                ->badge()
+                                                ->color(fn (string $state): string => match ($state) {
+                                                    'video' => 'success',
+                                                    'text' => 'info',
+                                                    default => 'gray',
+                                                }),
+                                        ])
+                                        ->columns(2)
+                                ])->collapsed(true)
+                        ])
+                    ),
                 Action::make('buy')
                     ->label('Buy Course')
                     ->button()
                     ->color('primary')
+                    ->icon('heroicon-m-shopping-cart')
                     ->action(function (Course $record, \Livewire\Component $livewire) {
                         $user = Auth::user();
                         
