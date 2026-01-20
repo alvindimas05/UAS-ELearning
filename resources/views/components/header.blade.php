@@ -25,7 +25,7 @@
         </ul>
     </div>
     <div class="navbar-end gap-2">
-        <a href="#login" class="btn btn-ghost">Login</a>
-        <a href="#signup" class="btn btn-primary">Get Started</a>
+        {{-- <a href="{{ route('get-started') }}" class="btn btn-ghost">Login</a> --}}
+        <a href="{{ route('get-started') }}" class="btn btn-primary">Get Started</a>
     </div>
 </header>

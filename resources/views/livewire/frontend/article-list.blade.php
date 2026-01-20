@@ -186,8 +186,8 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Learning?</h2>
             <p class="text-lg mb-8 opacity-90">Explore our courses and start your learning journey today!</p>
             <div class="flex gap-4 justify-center flex-wrap">
-                <a href="{{ route('home') }}#courses" class="btn btn-lg bg-base-100 text-primary hover:bg-base-200">
-                    Browse Courses
+                <a href="{{ route('get-started') }}" class="btn btn-lg bg-base-100 text-primary hover:bg-base-200">
+                    Get Started
                 </a>
                 <a href="{{ route('home') }}"
                     class="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary">

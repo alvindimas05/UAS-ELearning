@@ -16,7 +16,7 @@
                     through our innovative online learning platform.
                 </p>
                 <div class="flex gap-4 flex-wrap animate__animated animate__fadeInUp">
-                    <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
+                    <a href="{{ route('get-started') }}" class="btn btn-primary btn-lg">Get Started</a>
                     <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
                 </div>
                 <div class="flex gap-8 mt-8 animate__animated animate__fadeInUp animate__delay-1s">
@@ -242,8 +242,9 @@
             <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Start Learning?</h2>
             <p class="text-xl mb-8 opacity-90">Join thousands of students already learning on UniLearn</p>
             <div class="flex gap-4 justify-center flex-wrap">
-                <a href="#signup" class="btn btn-lg bg-base-100 text-primary hover:bg-base-200">Get Started Free</a>
-                <a href="#contact"
+                <a href="{{ route('get-started') }}" class="btn btn-lg bg-base-100 text-primary hover:bg-base-200">Get
+                    Started</a>
+                <a href="{{ route('contact') }}"
                     class="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary">Contact
                     Us</a>
             </div>

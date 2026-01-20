@@ -27,6 +27,7 @@ class TeacherPanelProvider extends PanelProvider
             ->id('teacher')
             ->path('teacher')
             ->login(\App\Filament\Teacher\Pages\Auth\Login::class)
+            ->registration(\App\Filament\Teacher\Pages\Auth\Register::class)
             ->colors([
                 'primary' => Color::Amber,
             ])

@@ -11,3 +11,5 @@ Route::prefix('article')->name('article.')->group(function () {
     Route::get('', ArticleList::class)->name('index');
     Route::get('{article}', ArticleShow::class)->name('show');
 });
+
+Route::get('get-started', \App\Livewire\GetStarted::class)->name('get-started');
