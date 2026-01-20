@@ -9,11 +9,16 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
+use Illuminate\Database\Eloquent\Builder;
+
 class CoursesTable
 {
     public static function configure(Table $table): Table
     {
         return $table
+            ->modifyQueryUsing(function (Builder $query) {
+                return $query->where('teacher_id', auth()->id());
+            })
             ->columns([
                 ImageColumn::make('thumbnail')
                     ->label('Thumbnail'),
