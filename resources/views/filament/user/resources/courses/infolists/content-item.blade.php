@@ -30,7 +30,7 @@
             :style="open ?
                 'position: fixed; inset: 0; z-index: 9999; padding: 16px; background-color: rgba(17, 24, 39, 0.75); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center;' :
                 'display: none'">
-            <div style="position: relative; width: 100%; max-width: 896px; background-color: white; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); overflow: hidden; max-height: 90vh; display: flex; flex-direction: column;"
+            <div style="position: relative; width: 100%; max-width: 896px; background-color: white; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); overflow-y: auto; max-height: 90vh; display: flex; flex-direction: column;"
                 x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 scale-95"
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="ease-in duration-200"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
@@ -62,7 +62,7 @@
                 </div>
 
                 <!-- Description Section -->
-                <div style="padding: 24px; overflow-y: auto; background-color: white; flex-grow: 1;">
+                <div style="padding: 24px; background-color: white;">
                     <h2
                         style="font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; color: #111827; margin-top: 0;">
                         {{ $getRecord()->title }}</h2>

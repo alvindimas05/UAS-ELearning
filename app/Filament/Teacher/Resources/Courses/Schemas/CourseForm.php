@@ -57,6 +57,8 @@ class CourseForm
                                     ->required(),
                                 FileUpload::make('file_path')
                                     ->label('Content File (Video/Image)')
+                                    ->required()
+                                    ->acceptedFileTypes(['video/mp4', 'image/jpeg', 'image/png'])
                                     ->directory('course-contents'),
                                 RichEditor::make('description')
                                     ->columnSpanFull(),
