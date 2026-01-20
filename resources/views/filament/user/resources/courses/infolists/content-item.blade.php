@@ -8,6 +8,11 @@
                     style="display: inline-flex; align-items: center; padding: 2px 10px; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; background-color: #dcfce7; color: #166534;">
                     Video
                 </span>
+            @elseif ($getRecord()->type === 'youtube')
+                <span
+                    style="display: inline-flex; align-items: center; padding: 2px 10px; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; background-color: #fee2e2; color: #991b1b;">
+                    Youtube
+                </span>
             @else
                 <span
                     style="display: inline-flex; align-items: center; padding: 2px 10px; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; background-color: #dbeafe; color: #1e40af;">
@@ -55,6 +60,29 @@
                                 type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                    @elseif ($getRecord()->type === 'youtube')
+                        @php
+                            $url = $getRecord()->url;
+                            $videoId = null;
+                            if (
+                                preg_match(
+                                    '/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/',
+                                    $url,
+                                    $matches,
+                                )
+                            ) {
+                                $videoId = $matches[1];
+                            }
+                        @endphp
+                        @if ($videoId)
+                            <iframe width="100%" height="450"
+                                src="https://www.youtube.com/embed/{{ $videoId }}" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen style="width: 100%; max-height: 60vh;">
+                            </iframe>
+                        @else
+                            <div style="color: white; padding: 20px;">Invalid Youtube URL</div>
+                        @endif
                     @else
                         <img src="{{ \Illuminate\Support\Facades\Storage::url($getRecord()->file_path) }}"
                             style="width: 100%; max-height: 60vh; object-fit: contain;" alt="{{ $getRecord()->title }}">

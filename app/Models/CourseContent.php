@@ -14,6 +14,7 @@ class CourseContent extends Model
         'title',
         'type',
         'file_path',
+        'url',
         'description',
         'sort_order',
     ];

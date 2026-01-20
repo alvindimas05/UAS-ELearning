@@ -97,6 +97,7 @@ class CourseCatalog extends Page implements HasTable, HasForms
                                                 ->color(fn (string $state): string => match ($state) {
                                                     'video' => 'success',
                                                     'text' => 'info',
+                                                    'youtube' => 'danger',
                                                     default => 'gray',
                                                 }),
                                         ])
