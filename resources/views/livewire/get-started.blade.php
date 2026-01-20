@@ -1,8 +1,7 @@
 <div class="min-h-screen bg-base-200 flex items-center justify-center p-4">
     <div class="max-w-4xl w-full">
         <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Get Started or Sign In</h1>
+            <h1 class="text-4xl font-bold mb-4 text-primary">Get Started or Sign In</h1>
             <p class="text-lg text-base-content/70">Join our community or log in to your account.</p>
         </div>
 

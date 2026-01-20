@@ -5,20 +5,19 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a href="{{ route('home') }}#courses">Courses</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('home') }}#about">About</a></li>
                 <li><a href="{{ route('article.index') }}">Articles</a></li>
                 <li><a href="{{ route('home') }}#contact">Contact</a></li>
             </ul>
         </div>
-        <a href="/"
-            class="btn btn-ghost text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <a href="/" class="btn btn-ghost text-xl font-bold bg-primary bg-clip-text text-transparent">
             🎓 UniLearn
         </a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 gap-2">
-            <li><a href="{{ route('home') }}#courses" class="hover:text-primary transition-colors">Courses</a></li>
+            <li><a href="{{ route('home') }}" class="hover:text-primary transition-colors">Home</a></li>
             <li><a href="{{ route('home') }}#about" class="hover:text-primary transition-colors">About</a></li>
             <li><a href="{{ route('article.index') }}" class="hover:text-primary transition-colors">Articles</a></li>
             <li><a href="{{ route('contact') }}" class="hover:text-primary transition-colors">Contact</a></li>

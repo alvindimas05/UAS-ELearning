@@ -1,6 +1,6 @@
 <div>
     <!-- Hero Section -->
-    <section class="hero min-h-screen bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
+    <section class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse gap-12">
             <div class="flex-1 flex items-center justify-center animate__animated animate__fadeInRight">
                 <!-- Lottie Animation -->
@@ -8,7 +8,7 @@
             </div>
             <div class="flex-1">
                 <h1
-                    class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight animate__animated animate__fadeInLeft">
+                    class="text-5xl md:text-6xl font-bold text-primary leading-tight animate__animated animate__fadeInLeft">
                     Learn Without Limits
                 </h1>
                 <p class="py-6 text-lg opacity-80 animate__animated animate__fadeInLeft">
@@ -160,7 +160,7 @@
     </section> --}}
 
     <!-- Statistics Section -->
-    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-primary-content">
+    <section class="py-20 bg-primary text-primary-content">
         <div class="max-w-7xl mx-auto px-4">
             <div class="stats stats-vertical lg:stats-horizontal shadow-2xl w-full bg-base-100 text-base-content">
                 <div class="stat place-items-center">

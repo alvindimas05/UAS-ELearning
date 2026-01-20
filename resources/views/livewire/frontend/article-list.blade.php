@@ -1,14 +1,13 @@
 <div>
     <!-- Hero Banner -->
-    <section class="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 py-16">
+    <section class="py-16">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center gap-2 text-sm opacity-60 mb-4">
                 <a href="{{ route('home') }}" class="hover:text-primary transition-colors">Home</a>
                 <span>/</span>
                 <span class="text-primary">Articles</span>
             </div>
-            <h1
-                class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight">
+            <h1 class="text-4xl md:text-5xl font-bold bg-primary bg-clip-text text-transparent leading-tight">
                 Articles & News
             </h1>
             <p class="mt-4 text-lg opacity-70 max-w-2xl">
@@ -129,8 +128,7 @@
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                             </figure>
                         @else
-                            <figure
-                                class="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                            <figure class="h-48 bg-primary flex items-center justify-center">
                                 <i class="fa-solid fa-book-open-reader text-4xl text-primary"></i>
                             </figure>
                         @endif
@@ -181,7 +179,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-primary to-secondary text-primary-content">
+    <section class="py-16 bg-primary text-primary-content">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Learning?</h2>
             <p class="text-lg mb-8 opacity-90">Explore our courses and start your learning journey today!</p>

@@ -1,13 +1,10 @@
 <div>
     <!-- Hero Section -->
-    <section
-        class="hero min-h-[40vh] bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 relative overflow-hidden">
+    <section class="hero min-h-[40vh] relative overflow-hidden">
         <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div class="hero-content text-center relative z-10 py-12">
             <div class="max-w-md">
-                <h1
-                    class="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-6">
-                    Contact Us</h1>
+                <h1 class="text-5xl font-bold text-primary mb-6">Contact Us</h1>
                 <p class="text-lg opacity-80">
                     We'd love to hear from you. Send us a message and we'll respond as soon as possible.
                 </p>

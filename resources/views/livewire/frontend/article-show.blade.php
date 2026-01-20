@@ -1,6 +1,6 @@
 <div>
     <!-- Hero Banner -->
-    <section class="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 py-16">
+    <section class="py-16">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center gap-2 text-sm opacity-60 mb-4">
                 <a href="{{ route('home') }}" class="hover:text-primary transition-colors">Home</a>
@@ -9,8 +9,7 @@
                 <span>/</span>
                 <span class="text-primary">{{ Str::limit($article->title, 30) }}</span>
             </div>
-            <h1
-                class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary leading-tight">
                 {{ $article->title }}
             </h1>
             <div class="flex items-center gap-4 mt-6">
@@ -99,7 +98,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-primary to-secondary text-primary-content">
+    <section class="py-16 bg-primary text-primary-content">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Want to Learn More?</h2>
             <p class="text-lg mb-8 opacity-90">Explore our courses and start your learning journey today!</p>

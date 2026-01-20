@@ -17,7 +17,9 @@
 
     <!-- Livewire Styles -->
     @livewireStyles
-    @stack('head')
+    @stack('styles')
+
+    @stack('scripts')
 </head>
 
 <body class="antialiased">
