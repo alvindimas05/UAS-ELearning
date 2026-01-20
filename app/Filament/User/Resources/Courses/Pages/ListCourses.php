@@ -3,7 +3,6 @@
 namespace App\Filament\User\Resources\Courses\Pages;
 
 use App\Filament\User\Resources\Courses\CourseResource;
-use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
 class ListCourses extends ListRecords
@@ -12,8 +11,6 @@ class ListCourses extends ListRecords
 
     protected function getHeaderActions(): array
     {
-        return [
-            CreateAction::make(),
-        ];
+        return [];
     }
 }
