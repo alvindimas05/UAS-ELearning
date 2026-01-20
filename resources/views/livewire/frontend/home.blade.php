@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <!-- Popular Courses Section -->
+    {{-- <!-- Popular Courses Section -->
     <section id="courses" class="py-20">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -157,7 +157,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Statistics Section -->
     <section class="py-20 bg-gradient-to-r from-primary to-secondary text-primary-content">

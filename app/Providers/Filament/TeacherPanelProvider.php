@@ -26,7 +26,7 @@ class TeacherPanelProvider extends PanelProvider
         return $panel
             ->id('teacher')
             ->path('teacher')
-            ->login()
+            ->login(\App\Filament\Teacher\Pages\Auth\Login::class)
             ->colors([
                 'primary' => Color::Amber,
             ])
