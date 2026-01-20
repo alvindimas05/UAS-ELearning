@@ -31,7 +31,8 @@ class ArticleForm
                 Section::make([
                     FileUpload::make('image')
                         ->required()
-                        ->image(),
+                        ->image()
+                        ->directory('articles'),
                 ]),
                 RichEditor::make('content')
                     ->required()
